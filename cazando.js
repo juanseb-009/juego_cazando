@@ -14,15 +14,19 @@ function iniciar(){
     graficarGato();
     graficarComida();
 }
+function graficarRect(x, y, ancho, alto, color){
+    ctx.fillStyle= color;
+    ctx.fillRect(x,y,ancho,alto);
+}
 
 function graficarGato(){
-    ctx.fillStyle="orange";
-    ctx.fillRect(gatoX,gatoY,ANCHO_GATO,ALTURA_GATO);
+   
+    graficarRect(gatoX,gatoY,ANCHO_GATO,ALTURA_GATO,"orange");
 
 
 }
 function graficarComida(){
-    ctx.fillStyle=" #074208";
-    ctx.fillRect(comidaX,comidaY,30,20);
+   
+    graficarRect(comidaX,comidaY,ANCHO_COMIDA,ALTO_COMIDA,"#074208");
 
 }
