@@ -30,3 +30,14 @@ function graficarComida(){
     graficarRect(comidaX,comidaY,ANCHO_COMIDA,ALTO_COMIDA,"#074208");
 
 }
+function limpiarCanva(){
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+}
+
+function moverIzq(){
+    gatoX = gatoX - 10;
+
+    limpiarCanva();
+    graficarGato();
+    graficarComida();
+}
