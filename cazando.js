@@ -9,6 +9,7 @@ let gatoX = 230;
 let gatoY = 250;
 let comidaX = 0;
 let comidaY = 0;
+let puntaje = 0;
 
 function iniciar(){
     graficarGato();
@@ -69,6 +70,15 @@ function detectarColision() {
         gatoY + ALTURA_GATO > comidaY && 
         gatoY < comidaY + ALTO_COMIDA) {
         
-        alert("¡Colisión! El gato tocó la comida");
+        puntaje = puntaje+1;
+        mostrarEnSpan("puntos", puntaje);
+        
+
+        comidaX = generarAleatorio(0, canvas.width - ANCHO_COMIDA);
+        comidaY = generarAleatorio(0, canvas.height - ALTO_COMIDA);
+        
+        limpiarCanva();
+        graficarGato();
+        graficarComida();
     }
 }
