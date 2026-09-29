@@ -10,10 +10,12 @@ let gatoY = 250;
 let comidaX = 0;
 let comidaY = 0;
 let puntaje = 0;
+let tiempo =10;
 
 function iniciar(){
     graficarGato();
     graficarComida();
+    setInterval(restarTime,1000);
 }
 function graficarRect(x, y, ancho, alto, color){
     ctx.fillStyle= color;
@@ -81,4 +83,8 @@ function detectarColision() {
         graficarGato();
         graficarComida();
     }
+}
+function restarTime(){
+    tiempo = tiempo-1;
+    mostrarEnSpan("tiempo",tiempo);
 }
