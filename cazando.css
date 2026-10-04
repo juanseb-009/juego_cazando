@@ -1,6 +1,6 @@
 /* =====================================================
    GATO CAZADOR
-   Diseño gráfico del proyecto
+   Diseño visual del proyecto
    ===================================================== */
 
 
@@ -35,24 +35,25 @@ body {
 
 
     /*
-        FONDO DEL PROYECTO
+       FONDO DEL PROYECTO
 
-        La imagen debe estar en:
+       Debes tener:
 
-        img/fondo-gato.jpg
+       img/fondo-gato.jpg
     */
 
     background:
 
         linear-gradient(
-            rgba(38, 32, 27, 0.72),
-            rgba(38, 32, 27, 0.82)
+            rgba(25, 22, 20, 0.72),
+            rgba(25, 22, 20, 0.84)
         ),
 
         url("img/fondo-gato.jpg")
         center center / cover fixed;
 
 }
+
 
 
 /* =====================================================
@@ -65,11 +66,12 @@ body {
 
     z-index: -1;
 
-    color: rgba(255, 255, 255, 0.08);
+    color:
+        rgba(255, 255, 255, 0.08);
 
     pointer-events: none;
 
-    font-size: 90px;
+    font-size: 85px;
 
     animation:
         flotar 5s ease-in-out infinite;
@@ -80,7 +82,6 @@ body {
 .huella-1 {
 
     left: 4%;
-
     top: 20%;
 
     transform:
@@ -92,12 +93,12 @@ body {
 .huella-2 {
 
     right: 5%;
-
     top: 50%;
 
     font-size: 70px;
 
-    animation-delay: 1.5s;
+    animation-delay:
+        1.5s;
 
 }
 
@@ -105,12 +106,12 @@ body {
 .huella-3 {
 
     left: 10%;
-
     bottom: 8%;
 
     font-size: 60px;
 
-    animation-delay: 2.5s;
+    animation-delay:
+        2.5s;
 
 }
 
@@ -125,7 +126,6 @@ body {
             rotate(-10deg);
 
     }
-
 
     50% {
 
@@ -172,15 +172,11 @@ body {
     justify-content: space-between;
 
     border-bottom:
-        2px dashed rgba(255, 255, 255, 0.25);
+        2px dashed
+        rgba(255, 255, 255, 0.25);
 
 }
 
-
-
-/* =====================================================
-   MARCA
-   ===================================================== */
 
 .marca {
 
@@ -193,27 +189,24 @@ body {
 }
 
 
-.logo-gato {
+.logo {
 
     width: 70px;
-
     height: 70px;
 
-    display: flex;
+    display: grid;
 
-    align-items: center;
-
-    justify-content: center;
-
-    overflow: hidden;
+    place-items: center;
 
     border:
-        3px solid #e6c79f;
+        3px solid #d7c09f;
 
     border-radius: 50%;
 
     background:
         #302c28;
+
+    font-size: 38px;
 
     box-shadow:
         0 6px 0 #1e1b18;
@@ -221,20 +214,10 @@ body {
 }
 
 
-.logo-gato img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-}
-
-
 .titulo span {
 
-    color: #e8cba4;
+    color:
+        #e8cba4;
 
     font-size: 9px;
 
@@ -249,7 +232,7 @@ body {
 
     margin-top: 3px;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 28px;
 
@@ -276,7 +259,8 @@ body {
 
 .autor small {
 
-    color: #cbbda9;
+    color:
+        #cbbda9;
 
     font-size: 8px;
 
@@ -291,7 +275,7 @@ body {
 
     margin-top: 3px;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 11px;
 
@@ -330,7 +314,8 @@ body {
 
 .etiqueta {
 
-    color: #e7b97f;
+    color:
+        #e7b97f;
 
     font-size: 10px;
 
@@ -345,7 +330,7 @@ body {
 
     margin-top: 12px;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 50px;
 
@@ -360,7 +345,8 @@ body {
 
     margin-top: 18px;
 
-    color: #eee4d8;
+    color:
+        #eee4d8;
 
     font-size: 15px;
 
@@ -389,7 +375,7 @@ body {
     background:
         rgba(255, 255, 255, 0.13);
 
-    color: #ffffff;
+    color: white;
 
     font-size: 11px;
 
@@ -400,43 +386,46 @@ body {
 
 
 /* =====================================================
-   GATO DE PRESENTACIÓN
+   DECORACIÓN DE LA PRESENTACIÓN
    ===================================================== */
 
-.gato-presentacion {
+.ilustracion {
 
     position: relative;
 
     width: 230px;
-
     height: 230px;
 
     display: flex;
 
-    align-items: flex-end;
+    align-items: center;
 
     justify-content: center;
 
 }
 
 
-.gato-presentacion img {
+.gato-decorativo {
 
-    position: relative;
+    width: 175px;
+    height: 175px;
 
-    z-index: 2;
+    display: grid;
 
-    width: 220px;
+    place-items: center;
 
-    max-height: 230px;
+    border:
+        3px solid #d5b184;
 
-    object-fit: contain;
+    border-radius: 50%;
 
-    filter:
-        drop-shadow(
-            0 15px 12px
-            rgba(0, 0, 0, 0.4)
-        );
+    background:
+        rgba(255, 248, 235, 0.95);
+
+    font-size: 95px;
+
+    box-shadow:
+        0 10px 0 #8f775c;
 
     animation:
         gato-flota 3s ease-in-out infinite;
@@ -454,7 +443,6 @@ body {
 
     }
 
-
     50% {
 
         transform:
@@ -469,14 +457,12 @@ body {
 
     position: absolute;
 
-    z-index: 4;
+    z-index: 2;
 
     top: 5px;
-
     right: 5px;
 
     width: 65px;
-
     height: 65px;
 
     display: grid;
@@ -513,7 +499,6 @@ body {
 
     }
 
-
     50% {
 
         transform:
@@ -541,8 +526,7 @@ body {
 
     align-items: center;
 
-    padding:
-        12px;
+    padding: 12px;
 
     border:
         2px solid #c4ad91;
@@ -575,7 +559,6 @@ body {
 .estadistica-icono {
 
     width: 48px;
-
     height: 48px;
 
     display: grid;
@@ -596,7 +579,8 @@ body {
 
     display: block;
 
-    color: #97734f;
+    color:
+        #97734f;
 
     font-size: 9px;
 
@@ -613,7 +597,8 @@ body {
 
     margin-top: 3px;
 
-    color: #302c28;
+    color:
+        #302c28;
 
     font-family:
         "Courier New",
@@ -628,7 +613,8 @@ body {
 
     margin-left: 5px;
 
-    color: #8b7c6b;
+    color:
+        #8b7c6b;
 
     font-size: 8px;
 
@@ -652,7 +638,8 @@ body {
     background:
         #e8dfd1;
 
-    color: #736755;
+    color:
+        #736755;
 
     font-size: 9px;
 
@@ -668,7 +655,6 @@ body {
     display: inline-block;
 
     width: 7px;
-
     height: 7px;
 
     margin-right: 5px;
@@ -710,11 +696,6 @@ body {
 }
 
 
-
-/* =====================================================
-   ENCABEZADO DEL JUEGO
-   ===================================================== */
-
 .encabezado-juego {
 
     display: flex;
@@ -730,7 +711,8 @@ body {
 
 .encabezado-juego span {
 
-    color: #cdbda8;
+    color:
+        #cdbda8;
 
     font-size: 9px;
 
@@ -745,7 +727,7 @@ body {
 
     margin-top: 3px;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 22px;
 
@@ -768,7 +750,8 @@ body {
 
     border-radius: 20px;
 
-    color: #d8c5ab;
+    color:
+        #d8c5ab;
 
     font-size: 9px;
 
@@ -819,7 +802,7 @@ canvas {
     border-radius: 10px;
 
     background:
-        #ffffff;
+        white;
 
 }
 
@@ -835,7 +818,8 @@ canvas {
 
     z-index: 5;
 
-    color: #735d45;
+    color:
+        #735d45;
 
     font-size: 20px;
 
@@ -847,7 +831,6 @@ canvas {
 .esquina-1 {
 
     top: 8px;
-
     left: 8px;
 
     transform:
@@ -859,7 +842,6 @@ canvas {
 .esquina-2 {
 
     top: 8px;
-
     right: 8px;
 
     transform:
@@ -871,7 +853,6 @@ canvas {
 .esquina-3 {
 
     bottom: 8px;
-
     left: 8px;
 
     transform:
@@ -883,7 +864,6 @@ canvas {
 .esquina-4 {
 
     right: 8px;
-
     bottom: 8px;
 
     transform:
@@ -923,42 +903,28 @@ canvas {
 }
 
 
-.ayuda-gato {
+.ayuda-icono {
 
     width: 55px;
-
     height: 55px;
 
-    display: flex;
+    display: grid;
 
-    align-items: center;
-
-    justify-content: center;
-
-    overflow: hidden;
+    place-items: center;
 
     border-radius: 50%;
 
     background:
         #e8d5bb;
 
-}
-
-
-.ayuda-gato img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
+    font-size: 30px;
 
 }
 
 
 .ayuda strong {
 
-    color: #ffffff;
+    color: white;
 
     font-size: 13px;
 
@@ -971,7 +937,8 @@ canvas {
 
     margin-top: 4px;
 
-    color: #a99d8d;
+    color:
+        #a99d8d;
 
     font-size: 10px;
 
@@ -1001,7 +968,6 @@ canvas {
 .controles button {
 
     width: 50px;
-
     height: 43px;
 
     margin: 0;
@@ -1014,7 +980,8 @@ canvas {
     background:
         #ead9c1;
 
-    color: #40382f;
+    color:
+        #40382f;
 
     font-size: 16px;
 
@@ -1068,7 +1035,6 @@ canvas {
 .controles .boton-reiniciar {
 
     width: auto;
-
     height: auto;
 
     margin-top: 15px;
@@ -1084,7 +1050,7 @@ canvas {
     background:
         #c97940;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 9px;
 
@@ -1119,7 +1085,8 @@ canvas {
 
     text-align: center;
 
-    color: #f1d5af;
+    color:
+        #f1d5af;
 
     font-family:
         "Courier New",
@@ -1170,44 +1137,31 @@ canvas {
 }
 
 
-.objetivo-gato {
+.objetivo-icono {
 
     width: 75px;
-
     height: 75px;
 
     flex-shrink: 0;
 
-    display: flex;
+    display: grid;
 
-    align-items: center;
-
-    justify-content: center;
-
-    overflow: hidden;
+    place-items: center;
 
     border-radius: 50%;
 
     background:
         #302c28;
 
-}
-
-
-.objetivo-gato img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
+    font-size: 40px;
 
 }
 
 
 .objetivo-texto span {
 
-    color: #a16f45;
+    color:
+        #a16f45;
 
     font-size: 9px;
 
@@ -1222,7 +1176,8 @@ canvas {
 
     margin-top: 4px;
 
-    color: #332d27;
+    color:
+        #332d27;
 
     font-size: 21px;
 
@@ -1235,7 +1190,8 @@ canvas {
 
     margin-top: 6px;
 
-    color: #776d61;
+    color:
+        #776d61;
 
     font-size: 12px;
 
@@ -1271,7 +1227,6 @@ canvas {
 
     }
 
-
     50% {
 
         transform:
@@ -1304,7 +1259,8 @@ footer {
     background:
         #211e1b;
 
-    color: #a99d8d;
+    color:
+        #a99d8d;
 
     font-size: 8px;
 
@@ -1317,23 +1273,21 @@ footer {
 
 footer div:first-child {
 
-    color: #e6c59f;
+    color:
+        #e6c59f;
 
 }
 
 
 
 /* =====================================================
-   RESPONSIVE - TABLET
+   TABLET
    ===================================================== */
 
 @media (max-width: 800px) {
 
-
     .autor {
-
         display: none;
-
     }
 
 
@@ -1355,22 +1309,6 @@ footer div:first-child {
         margin-left: auto;
 
         margin-right: auto;
-
-    }
-
-
-    .gato-presentacion {
-
-        width: 200px;
-
-        height: 200px;
-
-    }
-
-
-    .gato-presentacion img {
-
-        width: 190px;
 
     }
 
@@ -1405,17 +1343,15 @@ footer div:first-child {
 
     }
 
-
 }
 
 
 
 /* =====================================================
-   RESPONSIVE - CELULAR
+   CELULAR
    ===================================================== */
 
 @media (max-width: 520px) {
-
 
     .juego-principal {
 
@@ -1431,11 +1367,12 @@ footer div:first-child {
     }
 
 
-    .logo-gato {
+    .logo {
 
         width: 55px;
-
         height: 55px;
+
+        font-size: 30px;
 
     }
 
@@ -1480,18 +1417,20 @@ footer div:first-child {
     }
 
 
-    .gato-presentacion {
+    .ilustracion {
 
-        width: 175px;
-
-        height: 175px;
+        width: 180px;
+        height: 180px;
 
     }
 
 
-    .gato-presentacion img {
+    .gato-decorativo {
 
-        width: 170px;
+        width: 140px;
+        height: 140px;
+
+        font-size: 75px;
 
     }
 
@@ -1518,7 +1457,6 @@ footer div:first-child {
     .estadistica-icono {
 
         width: 38px;
-
         height: 38px;
 
         font-size: 17px;
@@ -1585,9 +1523,12 @@ footer div:first-child {
     }
 
 
-    .objetivo-gato {
+    .objetivo-icono {
 
-        display: none;
+        width: 55px;
+        height: 55px;
+
+        font-size: 30px;
 
     }
 

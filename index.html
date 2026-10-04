@@ -2,73 +2,46 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Juego Cazando - Una aventura donde un gato debe atrapar su comida."
+        content="Juego Cazando - Ayuda al gato a encontrar su comida."
     >
 
-    <title>Gato Cazador | Sebas Santana</title>
+    <title>Juego Cazando | Sebas Santana</title>
 
-    <!-- CSS DEL PROYECTO -->
-    <link
-        rel="stylesheet"
-        href="cazando.css"
-    >
+    <link rel="stylesheet" href="cazando.css">
 
-    <!-- UTILIDADES ORIGINALES -->
     <script src="utils.js"></script>
-
 </head>
 
 
 <body onload="iniciar()">
 
-
-    <!-- =========================================
-         DECORACIÓN DE FONDO
-    ========================================== -->
+    <!-- Decoración -->
 
     <div class="huella huella-1">🐾</div>
-
     <div class="huella huella-2">🐾</div>
-
     <div class="huella huella-3">🐾</div>
 
 
-    <!-- =========================================
-         CONTENEDOR PRINCIPAL
-    ========================================== -->
+    <!-- Contenedor principal -->
 
     <main class="juego-principal">
 
 
-        <!-- =====================================
-             CABECERA
-        ====================================== -->
+        <!-- CABECERA -->
 
         <header class="cabecera">
 
-
             <div class="marca">
 
-
-                <div class="logo-gato">
-
-                    <img
-                        src="img/gato.png"
-                        alt="Gato protagonista"
-                    >
-
+                <div class="logo">
+                    🐱
                 </div>
-
 
                 <div class="titulo">
 
@@ -81,7 +54,6 @@
                     </h1>
 
                 </div>
-
 
             </div>
 
@@ -98,97 +70,69 @@
 
             </div>
 
-
         </header>
 
 
 
-        <!-- =====================================
-             PRESENTACIÓN
-        ====================================== -->
+        <!-- PRESENTACIÓN -->
 
         <section class="presentacion">
 
-
             <div class="presentacion-texto">
 
-
                 <div class="etiqueta">
-
                     🐾 MISIÓN DEL DÍA
-
                 </div>
-
 
                 <h2>
                     ¡Atrapa la comida!
                 </h2>
 
-
                 <p>
-
-                    Nuestro pequeño cazador tiene hambre.
-                    Ayúdalo a encontrar su comida y consigue
-                    la mayor cantidad de puntos antes de que
-                    el tiempo llegue a cero.
-
+                    Ayuda al pequeño cazador a encontrar su comida
+                    y consigue la mayor cantidad de puntos antes
+                    de que el tiempo llegue a cero.
                 </p>
-
 
                 <div class="mensaje-presentacion">
 
                     🐱
+
                     <span>
                         ¡El gatito está listo para cazar!
                     </span>
 
                 </div>
 
-
             </div>
 
 
-            <!-- IMAGEN DEL GATO -->
-
-            <div class="gato-presentacion">
-
+            <div class="ilustracion">
 
                 <div class="burbuja">
-
                     🐟
-
                 </div>
 
-
-                <img
-                    src="img/gato.png"
-                    alt="Gato preparado para cazar"
-                >
-
+                <div class="gato-decorativo">
+                    🐱
+                </div>
 
             </div>
-
 
         </section>
 
 
 
-        <!-- =====================================
-             PANEL DE INFORMACIÓN
-        ====================================== -->
+        <!-- ESTADÍSTICAS -->
 
         <section class="estadisticas">
 
 
-            <!-- PUNTOS -->
-
             <div class="estadistica">
-
 
                 <div class="estadistica-icono">
                     🐾
                 </div>
-
 
                 <div>
 
@@ -202,12 +146,9 @@
 
                 </div>
 
-
             </div>
 
 
-
-            <!-- ESTADO -->
 
             <div class="estado">
 
@@ -219,15 +160,11 @@
 
 
 
-            <!-- TIEMPO -->
-
             <div class="estadistica tiempo">
-
 
                 <div class="estadistica-icono">
                     ⏰
                 </div>
-
 
                 <div>
 
@@ -245,7 +182,6 @@
 
                 </div>
 
-
             </div>
 
 
@@ -253,17 +189,12 @@
 
 
 
-        <!-- =====================================
-             ZONA DEL JUEGO
-        ====================================== -->
+        <!-- ZONA DE JUEGO -->
 
         <section class="zona-juego">
 
 
-            <!-- ENCABEZADO -->
-
             <div class="encabezado-juego">
-
 
                 <div>
 
@@ -281,28 +212,24 @@
                 <div class="objetivo-pequeno">
 
                     🐟
+
                     <span>
                         ATRAPA LA COMIDA
                     </span>
 
                 </div>
 
-
             </div>
 
 
 
-            <!-- =================================
-                 CANVAS
-            ================================== -->
+            <!-- CANVAS -->
 
             <div class="marco-canvas">
-
 
                 <div class="decoracion-esquina esquina-1">
                     🐾
                 </div>
-
 
                 <div class="decoracion-esquina esquina-2">
                     🐾
@@ -320,35 +247,24 @@
                     🐾
                 </div>
 
-
                 <div class="decoracion-esquina esquina-4">
                     🐾
                 </div>
-
 
             </div>
 
 
 
-            <!-- =================================
-                 CONTROLES
-            ================================== -->
+            <!-- CONTROLES -->
 
             <div class="controles-area">
 
 
                 <div class="ayuda">
 
-
-                    <div class="ayuda-gato">
-
-                        <img
-                            src="img/gato.png"
-                            alt="Gato"
-                        >
-
+                    <div class="ayuda-icono">
+                        🐱
                     </div>
-
 
                     <div>
 
@@ -363,12 +279,9 @@
 
                     </div>
 
-
                 </div>
 
 
-
-                <!-- CONTROLES ORIGINALES -->
 
                 <div class="controles">
 
@@ -383,14 +296,12 @@
 
                     <div class="fila-controles">
 
-
                         <button
                             onclick="moverIzq()"
                             aria-label="Mover izquierda"
                         >
                             ◀
                         </button>
-
 
                         <button
                             onclick="moverDown()"
@@ -399,14 +310,12 @@
                             ▼
                         </button>
 
-
                         <button
                             onclick="moverDere()"
                             aria-label="Mover derecha"
                         >
                             ▶
                         </button>
-
 
                     </div>
 
@@ -418,15 +327,13 @@
                         🐾 JUGAR DE NUEVO
                     </button>
 
-
                 </div>
-
 
             </div>
 
 
 
-            <!-- MENSAJE DEL JUEGO -->
+            <!-- MENSAJE -->
 
             <p
                 id="mensaje"
@@ -438,53 +345,37 @@
 
 
 
-        <!-- =====================================
-             INFORMACIÓN DEL OBJETIVO
-        ====================================== -->
+        <!-- OBJETIVO -->
 
         <section class="objetivo">
 
 
-            <div class="objetivo-gato">
-
-                <img
-                    src="img/gato.png"
-                    alt="Gato cazador"
-                >
-
+            <div class="objetivo-icono">
+                🐱
             </div>
 
 
             <div class="objetivo-texto">
 
-
                 <span>
                     OBJETIVO DEL GATITO
                 </span>
-
 
                 <h2>
                     ¡Que nadie se quede con hambre!
                 </h2>
 
-
                 <p>
-
-                    Muévete por el área de juego,
-                    encuentra la comida y consigue
-                    todos los puntos posibles antes
-                    de que se termine el tiempo.
-
+                    Muévete por el área de juego, encuentra la comida
+                    y consigue todos los puntos posibles antes de que
+                    se termine el tiempo.
                 </p>
-
 
             </div>
 
 
             <div class="pez-objetivo">
-
                 🐟
-
             </div>
 
 
@@ -495,36 +386,29 @@
 
 
 
-    <!-- =====================================
-         PIE DE PÁGINA
-    ====================================== -->
+    <!-- PIE DE PÁGINA -->
 
     <footer>
-
 
         <div>
             🐾 GATO CAZADOR
         </div>
 
-
         <div>
             UNA AVENTURA FELINA
         </div>
-
 
         <div>
             SEBAS SANTANA
         </div>
 
-
     </footer>
 
 
 
-    
+    <!-- JAVASCRIPT ORIGINAL -->
 
     <script src="cazando.js"></script>
-
 
 </body>
 
