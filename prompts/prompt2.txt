@@ -1,0 +1,27 @@
+Continúa trabajando como programador web y diseñador gráfico profesional.
+
+Ahora mejora visualmente el juego "Juego Cazando" incorporando imágenes relacionadas con la temática del juego.
+
+El juego trata sobre un gato que debe cazar su comida, por lo que la identidad visual debe estar relacionada con gatos, comida, peces, huellas y una aventura felina.
+
+Agrega una imagen del gato protagonista llamada "gato.png" y utiliza una imagen llamada "fondo-gato.jpg" como fondo de la página mediante CSS.
+
+La imagen del gato debe integrarse visualmente en la interfaz sin interferir con el canvas ni con la lógica del juego.
+
+El fondo debe utilizarse mediante la propiedad CSS background o background-image.
+
+IMPORTANTE:
+- No modificar cazando.js.
+- No modificar utils.js.
+- Mantener funcionando todos los controles existentes.
+- Mantener los identificadores HTML utilizados por JavaScript.
+- Mantener HTML y CSS separados.
+- Mantener un diseño responsive.
+- Las imágenes deben estar organizadas dentro de una carpeta llamada "img".
+- La interfaz debe conservar una apariencia relacionada con un videojuego de gatos.
+
+La estructura esperada es:
+
+img/
+    gato.png
+    fondo-gato.jpg

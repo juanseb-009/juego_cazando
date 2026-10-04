@@ -1,0 +1,21 @@
+Actúa como un programador web y diseñador gráfico profesional.
+
+Necesito mejorar visualmente la interfaz de mi juego "Juego Cazando", desarrollado con HTML, CSS y JavaScript.
+
+El juego consiste en controlar un gato que debe cazar su comida y conseguir puntos antes de que se termine el tiempo.
+
+Quiero que rediseñes la interfaz para que tenga una identidad visual relacionada con un juego de gatos, utilizando elementos como gatos, huellas, comida, peces, colores amigables y elementos visuales relacionados con una aventura felina.
+
+La interfaz debe verse moderna, atractiva, divertida y propia de un videojuego.
+
+IMPORTANTE:
+- Solo puedes modificar HTML y CSS.
+- No debes modificar JavaScript.
+- Debes conservar los identificadores HTML utilizados por JavaScript.
+- El funcionamiento del juego debe mantenerse intacto.
+- El diseño debe ser responsive.
+- El CSS debe permanecer en un archivo separado del HTML.
+- No debes colocar CSS dentro del HTML.
+- No debes colocar JavaScript dentro del HTML salvo las referencias a los archivos JavaScript existentes.
+
+El resultado debe mejorar considerablemente la presentación visual del juego sin alterar su funcionamiento.

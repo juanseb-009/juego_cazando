@@ -114,5 +114,5 @@ function reiniciar(){
     limpiarCanva();
     graficarGato();
     graficarComida();
-    intervalo = setInterval(restarTime, 1000)
+    intervalo = setInterval(restarTime, 1250)
 }
